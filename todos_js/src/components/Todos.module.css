@@ -1,0 +1,91 @@
+.main {
+    width: 50vw;
+    max-width: 670px;
+    height: fit-content;
+    background-color: lightblue;
+    /* background-color: lightslategray; */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 2px #555;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: calc(100% - 92px);
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: solid 2px gray;
+}
+
+.btninput {
+    /* width: 300px; */
+    margin: 0;
+    padding: 10px;
+    background-color: #555;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 2px gray;
+}
+
+.section {
+    width: 90%;
+    margin: 0 auto;
+    height: 3rem;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.todotext {
+    /* 박스에서 넘쳐난 텍스트 숨기기 */
+    overflow: hidden;
+    /* 줄바꿈이 없어짐 */
+    white-space: nowrap;
+    /* 말줄임 효과 */
+    text-overflow: ellipsis;
+    /* 어절이 유지되지 않고 끊어져서 줄바꿈 됨 */
+    word-break: break-all;
+}
+
+.section .tooltip {
+    visibility: hidden;
+    width: 100%;
+    /* max-width: 360px; */
+    background-color: lightslategray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    white-space: normal;
+
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+}
+
+.section:active .tooltip {
+    visibility: visible;
+}
+
+.btncheck {
+    margin: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.checkbox {
+    margin-right: 10px;
+}
