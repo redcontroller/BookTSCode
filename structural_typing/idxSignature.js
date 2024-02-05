@@ -5,5 +5,4 @@ const heropy = {
 };
 heropy['isValid'] = true;
 heropy['emails'] = ['thesecon@gmail.com', 'test@gmail.com'];
-
 console.log(heropy);

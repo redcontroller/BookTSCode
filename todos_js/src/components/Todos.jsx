@@ -26,21 +26,21 @@ export default function Todos() {
                 </button>
             </form>
             <hr />
-                {todos.map((todo) => (
-                    <section className={styles.section} key={todo.id}>
-                        <div 
-                        className={styles.todotext}
-                        style={{display: "inline-block", textDecoration: todo.isDone ? "line-through" : "none" }} >
-                            <input
-                            className={styles.checkbox}
-                            type="checkbox"
-                            onClick={() => onToggleTodo(todo.id)} />
-                            {todo.content}
-                        </div>
-                        <span className={styles.tooltip}>{todo.content}</span>
-                        <button className={styles.btncheck} onClick={() => onDeleteTodo(todo.id)}>❌</button>
-                    </section>
-                ))}
+            {todos.map((todo) => (
+                <section className={styles.section} key={todo.id}>
+                    <div 
+                    className={styles.todotext}
+                    style={{display: "inline-block", textDecoration: todo.isDone ? "line-through" : "none" }} >
+                        <input
+                        className={styles.checkbox}
+                        type="checkbox"
+                        onClick={() => onToggleTodo(todo.id)} />
+                        {todo.content}
+                    </div>
+                    <span className={styles.tooltip}>{todo.content}</span>
+                    <button className={styles.btncheck} onClick={() => onDeleteTodo(todo.id)}>❌</button>
+                </section>
+            ))}
         </main>
     )
 }
