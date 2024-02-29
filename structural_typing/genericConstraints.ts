@@ -14,7 +14,7 @@ const sample2: NewType<number> = {
     contents: 100
 };
 
-// const sample3: NewType<boolean> = { // Error! type 'booean'
+// const sample3: NewType<boolean> = { // Error! type 'boolean'
 //     id: 3,
 //     contents: false
 // };

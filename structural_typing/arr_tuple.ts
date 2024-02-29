@@ -12,7 +12,7 @@ const arrUndefined: undefined[] = [undefined, undefined, undefined];
 
 // Don't use it
 const arrAny: any[] = [1, 'a', true];
-const arrUnkown: unknown[] = [1, 'a', true];
+const arrUnknown: unknown[] = [1, 'a', true];
 
 
 const arrReadonly: readonly string[] = ["a", "b", "c"];
