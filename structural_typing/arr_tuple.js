@@ -10,7 +10,7 @@ const arrNull = [null, null, null];
 const arrUndefined = [undefined, undefined, undefined];
 // Don't use it
 const arrAny = [1, 'a', true];
-const arrUnkown = [1, 'a', true];
+const arrUnknown = [1, 'a', true];
 const arrReadonly = ["a", "b", "c"];
 const arrReadonly1 = ["a", "b", "c"];
 let arrReadonly3 = ['a', 'b'];
